@@ -1,0 +1,92 @@
+{
+  "day": 26,
+  "slug": "dia_26",
+  "title": "Testing con assert y pytest",
+  "summary": "Hoy entraste en una práctica fundamental del desarrollo profesional.",
+  "sections": [
+    {
+      "id": "objective",
+      "title": "Objetivo del día",
+      "file": "sections/objective.md"
+    },
+    {
+      "id": "theory",
+      "title": "Explicación teórica",
+      "file": "sections/theory.md"
+    },
+    {
+      "id": "syntax",
+      "title": "Sintaxis y funcionamiento",
+      "file": "sections/syntax.md"
+    },
+    {
+      "id": "simple_examples",
+      "title": "Ejemplos simples",
+      "file": "sections/simple_examples.md"
+    },
+    {
+      "id": "practical_examples",
+      "title": "Ejemplos prácticos",
+      "file": "sections/practical_examples.md"
+    },
+    {
+      "id": "common_errors",
+      "title": "Errores comunes",
+      "file": "sections/common_errors.md"
+    },
+    {
+      "id": "best_practices",
+      "title": "Buenas prácticas",
+      "file": "sections/best_practices.md"
+    },
+    {
+      "id": "exercises",
+      "title": "Ejercicios para practicar",
+      "file": "sections/exercises.md"
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "file": "sections/challenge.md"
+    },
+    {
+      "id": "expected_result",
+      "title": "Resultado esperado",
+      "file": "sections/expected_result.md"
+    },
+    {
+      "id": "summary",
+      "title": "Resumen final",
+      "file": "sections/summary.md"
+    }
+  ],
+  "code_blocks": [
+    {
+      "id": "example",
+      "title": "assert básico",
+      "category": "example",
+      "file": "examples/example.py",
+      "description": "Comprueba una expectativa simple.",
+      "expected_output": "assert passed",
+      "default_input": ""
+    },
+    {
+      "id": "exercise",
+      "title": "Función testeable",
+      "category": "exercise",
+      "file": "exercises/exercise.py",
+      "description": "Separa lógica para probarla fácil.",
+      "expected_output": "tests ok",
+      "default_input": ""
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "category": "challenge",
+      "file": "challenge/challenge.py",
+      "description": "Escribe un test estilo pytest.",
+      "expected_output": "pytest-style test passed",
+      "default_input": ""
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+- Instala `black` y `ruff`.
+- Formatea un archivo.
+- Introduce un import no usado y detecta el problema.
+- Corrige advertencias.
+- Organiza una mini estructura de proyecto.

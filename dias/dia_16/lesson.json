@@ -1,0 +1,92 @@
+{
+  "day": 16,
+  "slug": "dia_16",
+  "title": "Archivos: lectura, escritura y with open",
+  "summary": "Hoy tu código empezó a interactuar con el mundo exterior de manera persistente.",
+  "sections": [
+    {
+      "id": "objective",
+      "title": "Objetivo del día",
+      "file": "sections/objective.md"
+    },
+    {
+      "id": "theory",
+      "title": "Explicación teórica",
+      "file": "sections/theory.md"
+    },
+    {
+      "id": "syntax",
+      "title": "Sintaxis y funcionamiento",
+      "file": "sections/syntax.md"
+    },
+    {
+      "id": "simple_examples",
+      "title": "Ejemplos simples",
+      "file": "sections/simple_examples.md"
+    },
+    {
+      "id": "practical_examples",
+      "title": "Ejemplos prácticos",
+      "file": "sections/practical_examples.md"
+    },
+    {
+      "id": "common_errors",
+      "title": "Errores comunes",
+      "file": "sections/common_errors.md"
+    },
+    {
+      "id": "best_practices",
+      "title": "Buenas prácticas",
+      "file": "sections/best_practices.md"
+    },
+    {
+      "id": "exercises",
+      "title": "Ejercicios para practicar",
+      "file": "sections/exercises.md"
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "file": "sections/challenge.md"
+    },
+    {
+      "id": "expected_result",
+      "title": "Resultado esperado",
+      "file": "sections/expected_result.md"
+    },
+    {
+      "id": "summary",
+      "title": "Resumen final",
+      "file": "sections/summary.md"
+    }
+  ],
+  "code_blocks": [
+    {
+      "id": "example",
+      "title": "Escritura de archivos",
+      "category": "example",
+      "file": "examples/example.py",
+      "description": "Crea y lee un archivo.",
+      "expected_output": "Python",
+      "default_input": ""
+    },
+    {
+      "id": "exercise",
+      "title": "with open",
+      "category": "exercise",
+      "file": "exercises/exercise.py",
+      "description": "Lee líneas con contexto.",
+      "expected_output": "['Ana', 'Luis', 'Eva']",
+      "default_input": ""
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "category": "challenge",
+      "file": "challenge/challenge.py",
+      "description": "Guarda tareas y vuelve a leerlas.",
+      "expected_output": "['Study', 'Practice', 'Review']",
+      "default_input": ""
+    }
+  ]
+}

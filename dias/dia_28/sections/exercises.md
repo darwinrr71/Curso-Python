@@ -1,0 +1,5 @@
+- Crea estructura de carpetas.
+- Crea `Task` como `dataclass`.
+- Escribe un borrador de funciones necesarias.
+- Diseña el menú principal.
+- Define el formato JSON que usarás.

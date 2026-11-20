@@ -1,0 +1,5 @@
+- Escribe un test para suma.
+- Escribe un test para número par.
+- Escribe un test para una función de formateo.
+- Prueba un caso inválido si aplica.
+- Ejecuta `pytest` y corrige fallos.

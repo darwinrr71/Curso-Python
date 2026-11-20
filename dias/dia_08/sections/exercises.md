@@ -1,0 +1,1 @@
+Representa tres productos con diccionarios. Guarda notas en una lista y calcula promedio manualmente. Usa un set para eliminar duplicados de nombres. Crea una tupla para coordenadas de tres puntos. Combina varias estructuras en un mismo programa.

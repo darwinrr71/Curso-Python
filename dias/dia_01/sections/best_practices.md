@@ -1,0 +1,1 @@
+Usa nombres descriptivos: user_name, total_price, is_logged_in. Mantén un estilo consistente. No reutilices variables para valores de tipos totalmente distintos sin necesidad. Usa snake_case para nombres de variables en Python.

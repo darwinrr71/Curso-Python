@@ -1,0 +1,2360 @@
+
+
+===== PAGE 1 =====
+Manual de estudio de Python en 30 días
+Introducción general del plan
+Este plan está diseñado para enseñarte Python desde cero, pero respetando que ya sabes programar en
+otros lenguajes como C, JavaScript, Java y TypeScript. Eso cambia mucho la forma correcta de enseñarte: no
+hace falta explicarte qué es programar , pero sí hace falta enseñarte cómo piensa Python, cómo se escribe
+Python, qué lo hace distinto y qué buenas prácticas conviene adoptar desde el principio.
+El objetivo de este manual no es que memorices sintaxis suelta, sino que construyas una base sólida, clara y
+reutilizable. Al terminar los 30 días deberías poder:
+leer y escribir programas en Python con soltura,
+entender la sintaxis y la filosofía del lenguaje,
+trabajar con estructuras de datos y control de flujo,
+organizar código en funciones, módulos y archivos,
+leer y escribir JSON,
+consumir APIs,
+usar entornos virtuales y paquetes,
+escribir código orientado a objetos,
+usar type hints, dataclasses y testing básico,
+y construir un proyecto real en consola con una estructura razonable.
+Este plan está pensado para llevarte desde una base inicial hasta un nivel inicial-intermedio sólido. No
+intenta  cubrir  todo  Python,  sino  darte  una  base  muy  buena  para  luego  especializarte  en  backend,
+automatización, scripting, data engineering, testing u otras áreas.
+Cómo usar bien este plan sin retrasarte
+1. Estudia todos los días, aunque sea poco
+Es  mejor  estudiar  60  a  90  minutos  diarios  durante  30  días  que  estudiar  8  horas  un  solo  día  y  luego
+abandonar . Python se aprende por repetición, práctica y exposición constante.
+2. No leas pasivamente
+Cada ejemplo debes escribirlo tú. No basta con mirar el código y pensar “lo entendí”. Debes ejecutarlo,
+modificarlo, romperlo y volverlo a arreglar .
+3. Haz todos los ejercicios
+Los ejercicios son parte central del aprendizaje. Si solo lees teoría, te quedará una sensación falsa de
+dominio.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+1
+
+===== PAGE 2 =====
+4. Compara con otros lenguajes, pero no traduzcas mentalmente todo
+Saber C, JavaScript, Java o TypeScript te ayuda mucho, pero Python no debe aprenderse como “JavaScript
+con otra sintaxis” o “Java sin llaves”. Python tiene su propia forma de escribir y pensar el código.
+5. Adopta desde el inicio una mentalidad profesional
+Usa  nombres  claros,  evita  código  innecesariamente  complicado,  separa  responsabilidades,  prueba  tus
+funciones y acostúmbrate a escribir código legible.
+6. No corras hacia frameworks todavía
+Todavía  no  hace  falta  entrar  en  Flask,  FastAPI,  Django,  Pandas  o  machine  learning.  Primero  hay  que
+dominar el núcleo del lenguaje.
+7. Haz una libreta de errores
+Anota  errores  comunes  que  te  vayan  apareciendo:  indentación,  tipos,  rutas  de  archivos,  mutabilidad,
+confusión entre print y return, imports, etc. Eso acelera muchísimo el aprendizaje.
+8. Al terminar cada día, escribe un pequeño resumen con tus propias palabras
+Si no puedes explicar algo claramente, probablemente aún no lo entiendes del todo.
+Día 1 — Qué es Python, cómo se ejecuta, print,
+variables y tipos básicos
+Objetivo del día
+Hoy vas a entender qué es Python, cómo se ejecuta un programa Python, qué son los archivos .py, cómo
+mostrar información en pantalla con print(), cómo declarar variables y cuáles son los tipos básicos más
+importantes.
+En la práctica, esto te servirá para empezar a escribir tus primeros programas funcionales y comprender la
+base sobre la que se apoya todo lo demás.
+Explicación teórica completa
+Qué es Python
+Python es un lenguaje de programación de alto nivel, multiparadigma y de propósito general. “De alto
+nivel”  significa  que  su  sintaxis  está  más  cerca  del  lenguaje  humano  que  del  lenguaje  máquina.
+“Multiparadigma” significa que soporta distintos estilos de programación, como programación imperativa,
+2
+
+===== PAGE 3 =====
+orientada a objetos y funcional. “De propósito general” significa que se puede usar para muchas áreas:
+automatización, backend, scripts, análisis de datos, testing, herramientas internas, APIs y más.
+Python se hizo muy popular porque prioriza la legibilidad. Es un lenguaje que intenta que el código sea
+claro  y  fácil  de  mantener .  Eso  se  nota  en  decisiones  como  la  indentación  obligatoria  o  una  sintaxis
+generalmente simple.
+Cómo se ejecuta Python
+Cuando escribes código Python en un archivo .py, normalmente lo ejecutas con el intérprete de Python.
+Un intérprete es el programa que lee tu código y lo ejecuta.
+Ejemplo de archivo:
+print("Hola, Python")
+Si guardas ese archivo como main.py, puedes ejecutarlo desde terminal así:
+pythonmain.py
+O en algunos sistemas:
+python3main.py
+Qué es un archivo .py
+Un archivo .py es simplemente un archivo de texto que contiene código Python. No tiene nada mágico
+por sí mismo. La extensión .py indica que su contenido debe interpretarse como código Python.
+Qué hace print()
+print() es  una  función  incorporada  de  Python  que  muestra  información  en  la  salida  estándar ,
+normalmente la terminal.
+Es muy útil para:
+ver resultados,
+depurar ,
+entender cómo va cambiando el programa,
+mostrar mensajes al usuario.
+• 
+• 
+• 
+• 
+3
+
+===== PAGE 4 =====
+Qué es una variable
+Una variable es un nombre que hace referencia a un valor .
+En Python no declaras variables con una palabra como int, let o String. Simplemente asignas un
+valor con =.
+name= "Ana"
+age= 30
+Aquí name apunta al valor "Ana" y age apunta al valor 30.
+Tipado dinámico
+Python es un lenguaje de tipado dinámico. Eso significa que no necesitas declarar explícitamente el tipo de
+una variable al crearla. El tipo está en el valor , no en el nombre de la variable.
+x = 10
+x = "ahora soy texto"
+Esto es válido. Pero que sea válido no significa que siempre sea buena idea.
+Tipos básicos
+Los tipos básicos que debes conocer hoy son:
+int: números enteros
+float: números con decimales
+str: texto
+bool: valores booleanos (True y False)
+Ejemplos:
+age= 28 # int
+price= 19.99 # float
+name= "Luis"# str
+is_active= True # bool
+Python distingue mayúsculas y minúsculas
+Python diferencia entre name, Name y NAME. Son variables distintas.
+• 
+• 
+• 
+• 
+4
+
+===== PAGE 5 =====
+Sintaxis y funcionamiento
+Asignación de variables
+name= "Carlos"
+name es el identificador o nombre de la variable.
+= es el operador de asignación.
+"Carlos" es el valor que se asigna.
+Mostrar valores con print()
+name= "Carlos"
+print(name)
+Esto imprime el contenido actual de la variable name.
+Consultar el tipo con type()
+age= 25
+print(type(age))
+type() devuelve el tipo del valor .
+Ejemplos simples
+print("Hola")
+print(42)
+print(True)
+name= "Lucía"
+age= 27
+print(name)
+print(age)
+city= "Stockholm"
+country= "Sweden"
+print(city)
+print(country)
+• 
+• 
+• 
+5
+
+===== PAGE 6 =====
+Ejemplos prácticos
+Ejemplo 1: ficha simple de usuario
+name= "Marcos"
+age= 31
+height= 1.78
+is_student= False
+print("Name:", name)
+print("Age:", age)
+print("Height:", height)
+print("Student:", is_student)
+Ejemplo 2: revisar tipos
+product_name= "Laptop"
+stock= 15
+price= 999.99
+available= True
+print(type(product_name))
+print(type(stock))
+print(type(price))
+print(type(available))
+Errores comunes del principiante
+1. Pensar que = compara
+En Python, = asigna. Para comparar igualdad se usa ==.
+2. Escribir true o false
+En Python se escribe True y False, con mayúscula inicial.
+3. Usar nombres poco claros
+Evita variables como x, data, temp cuando realmente representan algo concreto.
+4. Confundir texto con números
+6
+
+===== PAGE 7 =====
+age= "25"
+Esto no es un entero, es texto.
+Buenas prácticas del día
+Usa nombres descriptivos: user_name, total_price, is_logged_in.
+Mantén un estilo consistente.
+No reutilices variables para valores de tipos totalmente distintos sin necesidad.
+Usa snake_case para nombres de variables en Python.
+Ejercicios para practicar
+Crea variables para tu nombre, edad, país y si trabajas actualmente. Luego imprímelas.
+Crea tres variables numéricas y muestra su tipo.
+Crea una variable con tu comida favorita y otra con el precio aproximado. Imprímelas.
+Escribe un programa que muestre una “ficha personal” con al menos 5 datos.
+Crea un script con 8 variables de distintos tipos e imprime cada una junto con su tipo.
+Mini reto del día
+Crea un programa que represente un producto de una tienda con nombre, precio, cantidad disponible y si
+está en oferta. Muestra toda la información de forma clara.
+Resultado esperado al terminar el día
+Deberías ser capaz de crear archivos .py, ejecutarlos, usar print(), declarar variables y reconocer los
+tipos básicos de Python.
+Resumen final del día
+Hoy construiste la base inicial del lenguaje: qué es Python, cómo se ejecuta y cómo guardar y mostrar
+información. Esto parece simple, pero es el punto de partida de todo lo que vendrá después.
+Día 2 — Números, operadores y conversión de
+tipos
+Objetivo del día
+Aprenderás a trabajar con números en Python, usar operadores aritméticos, de comparación y lógicos, y
+entenderás la conversión de tipos.
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+7
+
+===== PAGE 8 =====
+Explicación teórica completa
+Los programas no solo guardan valores: también los transforman. Para eso necesitas operadores. Python
+ofrece operadores para sumar , restar , multiplicar , dividir , comparar valores y combinar condiciones.
+Operadores aritméticos
++ suma
+- resta
+* multiplicación
+/ división con resultado float
+// división entera
+% módulo o residuo
+** potencia
+Operadores de comparación
+Devuelven True o False. - == - != - > - < - >= - <=
+Operadores lógicos
+and
+or
+not
+Conversión de tipos
+A veces necesitas convertir un valor de un tipo a otro. - int() convierte a entero - float() convierte a
+decimal - str() convierte a texto - bool() convierte a booleano
+Sintaxis y funcionamiento
+print(10+ 5)
+print(10/ 3)
+print(10//3)
+print(10% 3)
+print(2 **4)
+age= "25"
+age_number= int(age)
+print(age_number+ 5)
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+8
+
+===== PAGE 9 =====
+Ejemplos simples
+print(7 + 3)
+print(7 - 3)
+print(7 * 3)
+print(7 / 3)
+print(5 > 2)
+print(5 ==5)
+print(5 !=3)
+print(TrueandFalse)
+print(TrueorFalse)
+print(notTrue)
+Ejemplos prácticos
+Calcular precio total
+price= 19.99
+quantity= 3
+total= price* quantity
+print(total)
+Verificar mayoría de edad
+age= 20
+is_adult= age>=18
+print(is_adult)
+Convertir texto a número
+user_input= "42"
+number= int(user_input)
+print(number* 2)
+Errores comunes del principiante
+Intentar sumar texto con número sin conversión.• 
+9
+
+===== PAGE 10 =====
+Usar / esperando un entero.
+Creer que bool("False") devuelve False; en realidad casi cualquier string no vacío es True.
+Buenas prácticas del día
+Convierte tipos explícitamente cuando sea necesario.
+No confíes en conversiones implícitas imaginarias de otros lenguajes.
+Usa nombres claros para resultados intermedios.
+Ejercicios para practicar
+Calcula el área de un rectángulo.
+Calcula el promedio de tres notas.
+Verifica si un número es par usando %.
+Convierte una edad en texto a entero y súmale 10.
+Escribe expresiones con and, or y not y predice el resultado antes de ejecutarlas.
+Mini reto del día
+Crea un programa que calcule el precio final de una compra a partir de precio, cantidad y descuento.
+Resultado esperado al terminar el día
+Deberías  poder  operar  con  números,  comparar  valores,  combinar  condiciones  y  convertir  tipos
+correctamente.
+Resumen final del día
+Hoy  aprendiste  a  transformar  datos.  Ya  no  solo  puedes  guardar  valores:  puedes  trabajar  con  ellos  y
+construir lógica básica.
+Día 3 — Entrada de datos con input y primeros
+programas interactivos
+Objetivo del día
+Aprenderás a recibir datos del usuario con  input(), a convertir esos datos al tipo adecuado y a crear
+programas interactivos sencillos.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+10
+
+===== PAGE 11 =====
+Explicación teórica completa
+input() permite pausar el programa y esperar a que el usuario escriba algo. Lo importante es entender
+que input() siempre devuelve texto (str). Si necesitas un número, debes convertirlo.
+Sintaxis y funcionamiento
+name= input("What is your name? ")
+print("Hello", name)
+age= int(input("Enter your age: "))
+print(age+ 1)
+Ejemplos simples
+city= input("Enter your city: ")
+print(city)
+number= float(input("Enter a number: "))
+print(number* 2)
+Ejemplos prácticos
+Calculadora simple
+first= float(input("First number: "))
+second= float(input("Second number: "))
+print("Sum:", first+ second)
+Datos de usuario
+name= input("Name: ")
+age= int(input("Age: "))
+print(f"{name} will be {age+ 1} next year")
+Errores comunes del principiante
+Olvidar que input() devuelve str.• 
+11
+
+===== PAGE 12 =====
+Convertir directamente con int() sin validar y romper el programa si el usuario escribe texto no
+numérico.
+Escribir mensajes de entrada poco claros.
+Buenas prácticas del día
+Sé claro en los mensajes al usuario.
+Convierte el dato apenas después de leerlo si sabes qué tipo necesitas.
+Más adelante aprenderás a validar entradas con manejo de errores.
+Ejercicios para practicar
+Pide nombre y edad e imprime un mensaje personalizado.
+Pide dos números y muestra suma, resta, multiplicación y división.
+Pide ancho y alto y calcula el área.
+Pide precio y descuento y calcula el precio final.
+Pide un número y muestra si es par o impar .
+Mini reto del día
+Haz  un  programa  que  pida  al  usuario  su  nombre,  año  de  nacimiento  y  ciudad,  y  luego  muestre  una
+presentación legible.
+Resultado esperado al terminar el día
+Deberías poder crear programas que reciban datos del usuario y trabajen con ellos correctamente.
+Resumen final del día
+Hoy diste el paso desde programas estáticos a programas interactivos. Eso hace que el código empiece a
+sentirse útil de verdad.
+Día 4 — Condicionales, bloques e indentación
+Objetivo del día
+Aprenderás a tomar decisiones en el código con if, elif y else, y entenderás la importancia de la
+indentación en Python.
+Explicación teórica completa
+Los condicionales permiten ejecutar distintos bloques según si una condición es verdadera o falsa.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+12
+
+===== PAGE 13 =====
+Python no usa llaves {} para delimitar bloques como C, Java o JavaScript. Usa indentación. Eso significa
+que los espacios al inicio de línea no son decoración: forman parte de la sintaxis.
+Estructura básica
+ifcondition:
+# block
+elifanother_condition:
+# another block
+else:
+# fallback block
+Sintaxis y funcionamiento
+age= 20
+ifage>=18:
+print("Adult")
+else:
+print("Minor")
+if evalúa una condición.
+Si es True, se ejecuta el bloque indentado.
+Si es False, puede ejecutarse else.
+Ejemplos simples
+number= 10
+ifnumber> 0:
+print("Positive")
+temperature= 15
+iftemperature> 25:
+print("Hot")
+eliftemperature> 10:
+print("Mild")
+else:
+print("Cold")
+• 
+• 
+• 
+13
+
+===== PAGE 14 =====
+Ejemplos prácticos
+Sistema de acceso
+username= input("Username: ")
+ifusername=="admin":
+print("Access granted")
+else:
+print("Access denied")
+Clasificación por nota
+grade= float(input("Grade: "))
+ifgrade>=9:
+print("Excellent")
+elifgrade>=7:
+print("Good")
+elifgrade>=5:
+print("Pass")
+else:
+print("Fail")
+Errores comunes del principiante
+Indentar mal.
+Comparar con = en vez de ==.
+Escribir condiciones innecesariamente complejas.
+Usar varios if cuando en realidad corresponde if/elif/else.
+Buenas prácticas del día
+Usa 4 espacios por nivel de indentación.
+Mantén condiciones legibles.
+Evita anidar demasiados niveles cuando no haga falta.
+Ejercicios para practicar
+Pide una edad y muestra si es menor o mayor de edad.
+Pide un número y muestra si es positivo, negativo o cero.
+Pide una nota y clasifícala.
+Pide usuario y contraseña simples y valida ambos.
+Pide hora y muestra “morning”, “afternoon” o “night”.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+14
+
+===== PAGE 15 =====
+Mini reto del día
+Crea un programa que pida el precio de una compra y aplique diferentes descuentos según tramos.
+Resultado esperado al terminar el día
+Deberías poder escribir lógica de decisión clara usando condicionales bien indentados.
+Resumen final del día
+Hoy aprendiste a controlar el flujo del programa. Python te obliga a ser ordenado con la indentación, y eso
+es una ventaja enorme cuando te acostumbras.
+Día 5 — Strings: texto, índices, slicing y métodos
+Objetivo del día
+Aprenderás a trabajar correctamente con texto en Python: acceso por índices, cortes con slicing, longitud y
+métodos útiles.
+Explicación teórica completa
+Un str es una secuencia de caracteres. Eso significa que puedes acceder a sus posiciones individuales.
+Índices
+Los índices comienzan en 0.
+text= "Python"
+print(text[0])
+Resultado: P
+También puedes usar índices negativos.
+print(text[-1])
+Resultado: n
+15
+
+===== PAGE 16 =====
+Slicing
+Permite obtener una parte del string.
+text= "Python"
+print(text[0:2])
+print(text[2:])
+print(text[:4])
+Inmutabilidad
+Los  strings  en  Python  son  inmutables.  Eso  significa  que  no  puedes  modificar  un  carácter  individual
+directamente.
+Métodos comunes
+lower()
+upper()
+strip()
+replace()
+split()
+join()
+startswith()
+endswith()
+find()
+Sintaxis y funcionamiento
+name= "  Alice  "
+print(name.strip())
+print(name.lower())
+Ejemplos simples
+word= "Developer"
+print(len(word))
+print(word[0])
+print(word[-1])
+print(word[0:4])
+message= " Hello World "
+print(message.strip())
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+16
+
+===== PAGE 17 =====
+print(message.lower())
+print(message.replace("World", "Python"))
+Ejemplos prácticos
+Normalizar entrada de usuario
+email= input("Email: ").strip().lower()
+print(email)
+Separar palabras
+sentence= "python is clear and powerful"
+words= sentence.split()
+print(words)
+Errores comunes del principiante
+Intentar modificar un carácter por índice.
+Olvidar que strip() no modifica el string original, sino que devuelve uno nuevo.
+Confundir split() con cortar por posiciones.
+Buenas prácticas del día
+Normaliza texto cuando vayas a comparar entradas del usuario.
+Usa f-strings para construir textos legibles.
+No hagas slicing confuso si un método expresa mejor la intención.
+Ejercicios para practicar
+Toma un nombre y muéstralo en mayúsculas y minúsculas.
+Extrae el dominio de un email con slicing o split.
+Cuenta cuántos caracteres tiene una frase.
+Reemplaza una palabra por otra en una oración.
+Pide un texto y muestra su primer y último carácter .
+Mini reto del día
+Escribe un programa que reciba un nombre completo y muestre iniciales, nombre en mayúsculas, nombre
+en minúsculas y cantidad de caracteres sin contar espacios exteriores.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+17
+
+===== PAGE 18 =====
+Resultado esperado al terminar el día
+Deberías  poder  manipular  texto  con  soltura  y  entender  cómo  funcionan  los  strings  como  secuencias
+inmutables.
+Resumen final del día
+Hoy aprendiste una de las partes más usadas del lenguaje: el manejo de cadenas. En scripting, backend y
+automatización, esto aparece todo el tiempo.
+Día 6 — Listas: colección ordenada y mutable
+Objetivo del día
+Aprenderás a usar listas para guardar múltiples valores, recorrerlas, modificarlas y aplicar operaciones
+comunes.
+Explicación teórica completa
+Una lista es una colección ordenada y mutable. “Ordenada” significa que mantiene el orden de inserción.
+“Mutable” significa que sí puedes cambiar sus elementos.
+numbers= [10, 20, 30]
+Las listas son una de las estructuras más importantes en Python.
+Operaciones comunes
+acceso por índice
+slicing
+append()
+insert()
+remove()
+pop()
+sort()
+reverse()
+len()
+in
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+18
+
+===== PAGE 19 =====
+Sintaxis y funcionamiento
+fruits= ["apple", "banana", "orange"]
+print(fruits[0])
+fruits.append("mango")
+print(fruits)
+Ejemplos simples
+numbers= [1, 2, 3]
+numbers.append(4)
+print(numbers)
+colors= ["red", "blue", "green"]
+colors.remove("blue")
+print(colors)
+Ejemplos prácticos
+Lista de compras
+shopping_list= []
+shopping_list.append("milk")
+shopping_list.append("bread")
+shopping_list.append("eggs")
+print(shopping_list)
+Gestionar tareas
+tasks= ["study Python", "exercise", "read"]
+completed= tasks.pop(0)
+print("Completed:", completed)
+print("Pending:", tasks)
+Errores comunes del principiante
+Acceder a índices inexistentes.
+Confundir remove(valor) con pop(indice).
+Creer que métodos como sort() devuelven una nueva lista cuando modifican la original.
+• 
+• 
+• 
+19
+
+===== PAGE 20 =====
+Buenas prácticas del día
+Usa listas cuando necesites orden y mutabilidad.
+Evita nombres genéricos como list porque pisan nombres built-in.
+Comprueba longitud o contenido antes de acceder a posiciones dudosas.
+Ejercicios para practicar
+Crea una lista con cinco ciudades.
+Agrega y elimina elementos.
+Muestra el primero y el último elemento.
+Ordena una lista de números.
+Verifica si un elemento existe dentro de la lista.
+Mini reto del día
+Crea un pequeño gestor de invitados usando una lista: agrega, elimina y muestra invitados.
+Resultado esperado al terminar el día
+Deberías poder crear y modificar listas con seguridad y claridad.
+Resumen final del día
+Hoy incorporaste una estructura esencial para cualquier programa real: una colección mutable y ordenada.
+Día 7 — Tuplas, sets y diccionarios
+Objetivo del día
+Aprenderás otras estructuras de datos clave en Python y entenderás cuándo conviene usar cada una.
+Explicación teórica completa
+Tuplas
+Una tupla es una colección ordenada e inmutable.
+point= (10, 20)
+Se usa cuando quieres representar un conjunto fijo de valores que no deberían cambiar fácilmente.
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+20
+
+===== PAGE 21 =====
+Sets
+Un set es una colección no ordenada de elementos únicos.
+unique_numbers= {1, 2, 3}
+Sirve para eliminar duplicados y hacer operaciones de conjunto.
+Diccionarios
+Un diccionario guarda pares clave-valor .
+user= {"name": "Ana", "age": 30}
+Es fundamental cuando quieres representar entidades con propiedades.
+Sintaxis y funcionamiento
+user= {"name": "Ana", "age": 30}
+print(user["name"])
+user["email"] = "ana@example.com"
+Ejemplos simples
+point= (4, 5)
+print(point[0])
+numbers= {1, 2, 2, 3}
+print(numbers)
+car= {"brand": "Volvo", "year": 2024}
+print(car["brand"])
+Ejemplos prácticos
+Perfil de usuario
+profile= {
+"name": "Laura",
+21
+
+===== PAGE 22 =====
+"age": 29,
+"is_active": True,
+}
+print(profile)
+Eliminar duplicados
+emails= ["a@test.com", "b@test.com", "a@test.com"]
+unique_emails= set(emails)
+print(unique_emails)
+Errores comunes del principiante
+Intentar modificar una tupla.
+Creer que un set mantiene orden estable como una lista.
+Acceder a una clave inexistente en un diccionario sin control.
+Buenas prácticas del día
+Usa diccionarios para representar objetos simples.
+Usa sets cuando te importe unicidad.
+Usa tuplas para datos fijos y pequeños.
+Ejercicios para practicar
+Crea una tupla con coordenadas.
+Convierte una lista con duplicados en set.
+Crea un diccionario con datos de un libro.
+Agrega y modifica claves en un diccionario.
+Consulta si una clave existe.
+Mini reto del día
+Representa una pequeña base de datos de producto con diccionario e imprime sus campos claramente.
+Resultado esperado al terminar el día
+Deberías saber elegir entre lista, tupla, set y diccionario según el caso.
+Resumen final del día
+Hoy completaste el mapa inicial de estructuras de datos base de Python. Entender bien cuándo usar cada
+una te ahorra muchos problemas más adelante.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+22
+
+===== PAGE 23 =====
+Día 8 — Repaso integrador de estructuras y mini
+práctica guiada
+Objetivo del día
+Consolidar lo visto en los primeros siete días mediante una práctica integradora y reforzar diferencias entre
+estructuras.
+Explicación teórica completa
+Repasar también es aprender . Hoy no introduces muchas piezas nuevas: organizas mejor lo ya aprendido.
+Comparación rápida
+list: ordenada, mutable
+tuple: ordenada, inmutable
+set: único, sin duplicados
+dict: clave-valor
+Sintaxis y funcionamiento
+Hoy combinarás condicionales, strings y estructuras de datos.
+Ejemplos prácticos
+Registro simple de estudiantes
+student= {
+"name": "Diego",
+"grades": [8, 9, 7],
+"active": True,
+}
+print(student["name"])
+print(student["grades"])
+Tags únicos
+tags= ["python", "api", "python", "backend"]
+unique_tags= set(tags)
+print(unique_tags)
+• 
+• 
+• 
+• 
+23
+
+===== PAGE 24 =====
+Errores comunes del principiante
+Elegir la estructura equivocada.
+Intentar usar índices sobre un set.
+Olvidar que los diccionarios se acceden por clave.
+Buenas prácticas del día
+Antes de programar , pregúntate: ¿necesito orden, unicidad, mutabilidad o clave-valor?
+No uses una lista para todo solo por costumbre.
+Ejercicios para practicar
+Representa tres productos con diccionarios.
+Guarda notas en una lista y calcula promedio manualmente.
+Usa un set para eliminar duplicados de nombres.
+Crea una tupla para coordenadas de tres puntos.
+Combina varias estructuras en un mismo programa.
+Mini reto del día
+Crea un programa que represente un usuario, su lista de hobbies, su ciudad y una colección de etiquetas
+únicas.
+Resultado esperado al terminar el día
+Deberías sentirte más seguro diferenciando y combinando estructuras básicas.
+Resumen final del día
+Hoy cerraste la primera etapa de fundamentos. Ya puedes almacenar datos de formas bastante expresivas.
+Día 9 — Bucles while y for
+Objetivo del día
+Aprenderás a repetir tareas automáticamente con bucles y entenderás cuándo conviene usar  while y
+cuándo for.
+Explicación teórica completa
+Los bucles permiten ejecutar un bloque varias veces.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+24
+
+===== PAGE 25 =====
+while
+Se repite mientras una condición sea verdadera.
+for
+En Python,  for se usa para iterar sobre elementos de una secuencia o iterable. No es exactamente el
+for tradicional de C/Java con inicialización, condición y actualización.
+Sintaxis y funcionamiento
+count= 0
+whilecount< 3:
+print(count)
+count+=1
+forletterin"Python":
+print(letter)
+Ejemplos simples
+fornumberin[1, 2, 3]:
+print(number)
+attempts= 3
+whileattempts> 0:
+print(attempts)
+attempts-=1
+Ejemplos prácticos
+Recorrer lista de tareas
+tasks= ["study", "code", "sleep"]
+fortaskintasks:
+print(task)
+25
+
+===== PAGE 26 =====
+Validación simple repetitiva
+password= ""
+whilepassword!="python123":
+password= input("Password: ")
+print("Access granted")
+Errores comunes del principiante
+Olvidar actualizar la condición en un while y generar bucles infinitos.
+Usar while cuando un for sería más claro.
+Modificar listas torpemente mientras se recorren.
+Buenas prácticas del día
+Prefiere for cuando recorres colecciones.
+Usa while cuando dependa de una condición abierta.
+Cuidado con bucles infinitos.
+Ejercicios para practicar
+Imprime del 1 al 10 con while.
+Recorre una lista de nombres con for.
+Suma números de una lista.
+Pide una contraseña hasta que sea correcta.
+Muestra cada carácter de una palabra.
+Mini reto del día
+Haz un programa que reciba una lista de precios y muestre el total usando un bucle.
+Resultado esperado al terminar el día
+Deberías poder repetir tareas y recorrer datos con seguridad.
+Resumen final del día
+Hoy aprendiste a automatizar repetición, uno de los pilares de cualquier lenguaje de programación.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+26
+
+===== PAGE 27 =====
+Día 10 — range, break y continue
+Objetivo del día
+Aprenderás a controlar mejor los bucles usando range(), break y continue.
+Explicación teórica completa
+range()
+Genera una secuencia de números. Muy útil junto con for.
+fori inrange(5):
+print(i)
+Esto imprime de 0 a 4.
+break
+Rompe el bucle inmediatamente.
+continue
+Salta a la siguiente iteración.
+Sintaxis y funcionamiento
+fori inrange(1, 6):
+print(i)
+fori inrange(10):
+ifi ==5:
+break
+print(i)
+Ejemplos prácticos
+Buscar elemento
+names= ["Ana", "Luis", "Sofía"]
+fornameinnames:
+27
+
+===== PAGE 28 =====
+ifname=="Luis":
+print("Found")
+break
+Saltar números pares
+fori inrange(10):
+ifi % 2 ==0:
+continue
+print(i)
+Errores comunes del principiante
+Suponer que range(5) empieza en 1.
+Abusar de break y continue hasta hacer el flujo confuso.
+No entender que el límite superior de range no se incluye.
+Buenas prácticas del día
+Usa range con intención clara.
+Si usas mucho break o continue, revisa si la lógica puede escribirse mejor .
+Ejercicios para practicar
+Imprime del 1 al 20.
+Imprime solo impares del 1 al 20.
+Busca un valor en una lista y corta cuando lo encuentres.
+Salta palabras vacías en una lista de strings.
+Cuenta hacia atrás del 10 al 1.
+Mini reto del día
+Construye un menú que se repita hasta que el usuario elija salir .
+Resultado esperado al terminar el día
+Deberías manejar mejor la iteración y tener más control sobre el flujo de repetición.
+Resumen final del día
+Hoy hiciste los bucles mucho más útiles y flexibles.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+28
+
+===== PAGE 29 =====
+Día 11 — Funciones: definición, parámetros y
+retorno
+Objetivo del día
+Aprenderás a encapsular lógica en funciones reutilizables y a distinguir entre parámetros y valores de
+retorno.
+Explicación teórica completa
+Una  función  es  un  bloque  de  código  reutilizable  que  realiza  una  tarea  específica.  Sirve  para  evitar
+repetición, organizar lógica y mejorar claridad.
+Definición de función
+defgreet():
+print("Hello")
+Parámetros
+Son variables de entrada de la función.
+Retorno
+Una función puede devolver un valor con return.
+Sintaxis y funcionamiento
+defadd(a, b):
+returna + b
+result= add(2, 3)
+print(result)
+Diferencia entre print y return
+print() muestra un valor . return lo devuelve al lugar donde se llamó la función.
+Una función profesional normalmente devuelve resultados; no solo los imprime.
+29
+
+===== PAGE 30 =====
+Ejemplos simples
+defsay_hi(name):
+print("Hi", name)
+defsquare(number):
+returnnumber* number
+Ejemplos prácticos
+Calcular impuesto
+defcalculate_tax(price, rate):
+returnprice* rate
+Formatear nombre
+defformat_name(first_name, last_name):
+returnf"{first_name.strip().title()} {last_name.strip().title()}"
+Errores comunes del principiante
+Creer que imprimir equivale a devolver .
+No usar return cuando el valor debe reutilizarse.
+Crear funciones demasiado largas y confusas.
+Buenas prácticas del día
+Una función debe tener una responsabilidad clara.
+Usa nombres descriptivos: calculate_total, is_valid_email, format_name.
+Prefiere devolver valores antes que imprimir dentro de todo.
+Ejercicios para practicar
+Crea una función que sume dos números.
+Crea una función que reciba un nombre y devuelva un saludo.
+Crea una función que determine si un número es par .
+Crea una función que calcule el área de un triángulo.
+Crea una función que reciba un precio y un descuento y devuelva el precio final.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+30
+
+===== PAGE 31 =====
+Mini reto del día
+Crea tres funciones pequeñas para una tienda: calcular subtotal, calcular descuento y calcular total.
+Resultado esperado al terminar el día
+Deberías poder crear funciones limpias, con parámetros y retorno claro.
+Resumen final del día
+Hoy diste un salto importante: dejaste de escribir solo scripts lineales y empezaste a construir piezas
+reutilizables.
+Día 12 — Scope, variables locales y globales
+Objetivo del día
+Entenderás dónde existen las variables y por qué no todas están disponibles en todas partes del programa.
+Explicación teórica completa
+El scope o alcance define dónde una variable puede usarse.
+Variable local
+Se define dentro de una función y solo existe ahí.
+Variable global
+Se define fuera de funciones y puede leerse desde muchas partes, aunque modificarla desde funciones
+requiere cuidado.
+Sintaxis y funcionamiento
+x = 10
+defshow_value():
+y = 20
+print(x)
+print(y)
+x es global. y es local a la función.
+31
+
+===== PAGE 32 =====
+Ejemplos prácticos
+Buen uso de locales
+defcalculate_total(price, quantity):
+subtotal= price* quantity
+returnsubtotal
+Evitar depender demasiado de globales
+TAX_RATE= 0.25
+defadd_tax(price):
+returnprice* (1 + TAX_RATE)
+Errores comunes del principiante
+Intentar usar fuera de la función una variable creada dentro.
+Modificar globales innecesariamente.
+Escribir funciones que dependen de demasiadas cosas externas.
+Buenas prácticas del día
+Prefiere pasar datos por parámetros.
+Usa constantes globales solo para valores realmente compartidos y estables.
+Mantén tus funciones lo más puras posible.
+Ejercicios para practicar
+Crea una función con variables locales y comprueba su alcance.
+Define una constante global y úsala en una función.
+Reescribe una función para que reciba parámetros en vez de usar globales.
+Experimenta con un nombre local igual a uno global.
+Explica con tus palabras qué es scope.
+Mini reto del día
+Diseña un pequeño programa con 3 funciones que compartan una constante global como tasa de IVA.
+Resultado esperado al terminar el día
+Deberías entender bien el ciclo de vida y alcance de las variables.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+32
+
+===== PAGE 33 =====
+Resumen final del día
+Hoy empezaste a escribir código más controlado y menos dependiente del contexto externo.
+Día 13 — Comprehensions, enumerate y zip
+Objetivo del día
+Aprenderás herramientas muy Pythonic para transformar datos y recorrer colecciones de forma expresiva.
+Explicación teórica completa
+List comprehensions
+Permiten crear listas de forma compacta.
+squares= [n * n forn inrange(5)]
+enumerate
+Da índice y valor al iterar .
+zip
+Combina elementos de varias secuencias en pares o tuplas.
+Sintaxis y funcionamiento
+names= ["Ana", "Luis"]
+forindex, nameinenumerate(names):
+print(index, name)
+names= ["Ana", "Luis"]
+ages= [20, 30]
+forname, ageinzip(names, ages):
+print(name, age)
+33
+
+===== PAGE 34 =====
+Ejemplos prácticos
+Filtrar pares
+evens= [n forn inrange(20) ifn % 2 ==0]
+Numerar tareas
+tasks= ["study", "code", "rest"]
+forindex, taskinenumerate(tasks, start=1):
+print(index, task)
+Errores comunes del principiante
+Hacer comprehensions demasiado complejas.
+No entender que zip corta cuando la secuencia más corta termina.
+Usar índices manuales cuando enumerate es más claro.
+Buenas prácticas del día
+Usa comprehensions cuando mejoren claridad, no por lucirte.
+Si una comprehension queda demasiado larga, usa un bucle normal.
+Ejercicios para practicar
+Crea una lista de cuadrados.
+Filtra números mayores a 10.
+Recorre una lista mostrando índice y valor .
+Combina nombres y notas con zip.
+Convierte una lista de palabras a mayúsculas con comprehension.
+Mini reto del día
+Dadas dos listas, una de productos y otra de precios, muestra cada producto con su precio numerado.
+Resultado esperado al terminar el día
+Deberías escribir código más idiomático y elegante al recorrer datos.
+Resumen final del día
+Hoy te acercaste a la forma “pythonic” de escribir . Python no solo se trata de que funcione, sino de que
+quede claro.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+34
+
+===== PAGE 35 =====
+Día 14 — sorted, any, all y lambda
+Objetivo del día
+Aprenderás utilidades poderosas para evaluar colecciones y ordenar datos, además de una introducción a
+funciones lambda.
+Explicación teórica completa
+sorted
+Devuelve una nueva lista ordenada.
+any
+Devuelve True si al menos un elemento es verdadero.
+all
+Devuelve True si todos los elementos son verdaderos.
+lambda
+Permite definir funciones pequeñas y anónimas.
+Sintaxis y funcionamiento
+numbers= [3, 1, 2]
+print(sorted(numbers))
+values= [True, False, True]
+print(any(values))
+print(all(values))
+users= [
+{"name": "Ana", "age": 30},
+{"name": "Luis", "age": 25},
+]
+ordered= sorted(users, key=lambdauser: user["age"])
+print(ordered)
+35
+
+===== PAGE 36 =====
+Ejemplos prácticos
+Verificar emails no vacíos
+emails= ["a@test.com", "b@test.com", ""]
+print(all(emails))
+Ordenar productos por precio
+products= [
+{"name": "Mouse", "price": 20},
+{"name": "Laptop", "price": 900},
+]
+ordered= sorted(products, key=lambdaitem: item["price"])
+print(ordered)
+Errores comunes del principiante
+Pensar que sorted modifica la lista original.
+Usar lambda donde una función normal sería más clara.
+No entender qué evalúan any y all.
+Buenas prácticas del día
+Usa lambda solo en casos pequeños.
+Prefiere legibilidad antes que compacidad extrema.
+Ejercicios para practicar
+Ordena una lista de números.
+Ordena una lista de palabras por longitud.
+Comprueba si alguna nota aprueba.
+Comprueba si todos los usuarios están activos.
+Ordena una lista de diccionarios por una clave.
+Mini reto del día
+Crea una lista de productos y muéstralos ordenados por precio ascendente y descendente.
+Resultado esperado al terminar el día
+Deberías poder evaluar y ordenar datos de forma más expresiva.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+36
+
+===== PAGE 37 =====
+Resumen final del día
+Hoy incorporaste herramientas muy comunes en código profesional de Python.
+Día 15 — args, *kwargs y unpacking
+Objetivo del día
+Entenderás  cómo  recibir  cantidades  variables  de  argumentos  y  cómo  desempaquetar  colecciones  en
+Python.
+Explicación teórica completa
+*args
+Recoge argumentos posicionales extra en una tupla.
+**kwargs
+Recoge argumentos nombrados extra en un diccionario.
+Unpacking
+Permite extraer valores de listas, tuplas o diccionarios.
+Sintaxis y funcionamiento
+defadd_all(*args):
+total= 0
+fornumberinargs:
+total+=number
+returntotal
+defshow_user(**kwargs):
+print(kwargs)
+numbers= [10, 20]
+print(*numbers)
+37
+
+===== PAGE 38 =====
+Ejemplos prácticos
+Suma flexible
+defadd_all(*args):
+returnsum(args)
+Crear perfil flexible
+defcreate_profile(name, **extra_data):
+profile= {"name": name, **extra_data}
+returnprofile
+Errores comunes del principiante
+Usar *args y **kwargs sin una necesidad real.
+No entender que args es una tupla y kwargs un diccionario.
+Confundir desempacar con multiplicación.
+Buenas prácticas del día
+Úsalos cuando realmente la interfaz necesite flexibilidad.
+No conviertas una función en una caja negra difícil de entender .
+Ejercicios para practicar
+Crea una función que sume todos los argumentos recibidos.
+Crea una función que imprima pares clave-valor con **kwargs.
+Desempaqueta una tupla en tres variables.
+Combina dos diccionarios usando unpacking.
+Llama una función pasando una lista desempaquetada.
+Mini reto del día
+Crea una función que construya un producto con nombre obligatorio y cualquier cantidad de atributos
+extra.
+Resultado esperado al terminar el día
+Deberías entender cómo escribir interfaces flexibles y cómo desempaquetar datos.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+38
+
+===== PAGE 39 =====
+Resumen final del día
+Hoy viste una parte muy útil y muy propia de Python para trabajar con funciones y estructuras dinámicas.
+Día 16 — Archivos: lectura, escritura y with open
+Objetivo del día
+Aprenderás  a  trabajar  con  archivos  de  texto  y  entenderás  por  qué  with open(...) es  la  forma
+profesional de hacerlo.
+Explicación teórica completa
+Muchos programas necesitan persistir información. Un archivo es una forma simple de guardar datos en
+disco.
+Modos de apertura
+r: lectura
+w: escritura (sobrescribe)
+a: añade al final
+with open(...)
+Maneja el recurso de forma segura. Cierra el archivo automáticamente incluso si ocurre un error .
+Sintaxis y funcionamiento
+withopen("notes.txt", "r", encoding="utf-8") asfile:
+content= file.read()
+print(content)
+Ejemplos prácticos
+Escribir archivo
+withopen("hello.txt", "w", encoding="utf-8") asfile:
+file.write("Hello, Python\n")
+• 
+• 
+• 
+39
+
+===== PAGE 40 =====
+Leer líneas
+withopen("hello.txt", "r", encoding="utf-8") asfile:
+forlineinfile:
+print(line.strip())
+Errores comunes del principiante
+Olvidar cerrar archivos cuando no usa with.
+Abrir en w sin darse cuenta de que sobrescribe.
+Problemas con rutas relativas.
+Buenas prácticas del día
+Usa siempre with.
+Especifica encoding="utf-8".
+Sé claro con rutas y modos.
+Ejercicios para practicar
+Crea un archivo y escribe tres líneas.
+Léelo completo.
+Léelo línea por línea.
+Añade una línea nueva con modo a.
+Cuenta cuántas líneas tiene.
+Mini reto del día
+Haz un diario simple que escriba una entrada en un archivo y luego muestre todo el contenido guardado.
+Resultado esperado al terminar el día
+Deberías saber leer y escribir archivos de texto correctamente.
+Resumen final del día
+Hoy tu código empezó a interactuar con el mundo exterior de manera persistente.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+40
+
+===== PAGE 41 =====
+Día 17 — JSON: estructura, lectura y escritura
+Objetivo del día
+Aprenderás qué es JSON y cómo leerlo y escribirlo desde Python usando el módulo json.
+Explicación teórica completa
+JSON  es  un  formato  de  intercambio  de  datos  muy  usado  en  APIs,  archivos  de  configuración  y
+almacenamiento simple.
+Se parece mucho a objetos de JavaScript, pero no es exactamente lo mismo.
+Equivalencias comunes
+objeto JSON ↔ diccionario Python
+array JSON ↔ lista Python
+string JSON ↔ str
+number JSON ↔ int o float
+true / false ↔ True / False
+null ↔ None
+Sintaxis y funcionamiento
+importjson
+withopen("user.json", "r", encoding="utf-8") asfile:
+data= json.load(file)
+print(data)
+importjson
+data= {"name": "Ana", "age": 30}
+withopen("user.json", "w", encoding="utf-8") asfile:
+json.dump(data, file, ensure_ascii=False, indent=2)
+Ejemplos prácticos
+Guardar configuración
+settings= {
+"theme": "dark",
+• 
+• 
+• 
+• 
+• 
+• 
+41
+
+===== PAGE 42 =====
+"language": "es",
+"notifications": True,
+}
+Leer tareas
+withopen("tasks.json", "r", encoding="utf-8") asfile:
+tasks= json.load(file)
+Errores comunes del principiante
+Confundir json.load con json.loads.
+Intentar guardar tipos no serializables sin convertirlos.
+Creer que un diccionario Python y JSON son exactamente iguales en sintaxis.
+Buenas prácticas del día
+Usa indent=2 o indent=4 para legibilidad.
+Usa ensure_ascii=False si manejas texto con tildes.
+Valida mentalmente la estructura antes de guardar .
+Ejercicios para practicar
+Crea un diccionario y guárdalo en JSON.
+Léelo de nuevo e imprímelo.
+Guarda una lista de productos en JSON.
+Modifica el archivo y vuelve a cargarlo.
+Representa usuarios con nombre, edad y activo.
+Mini reto del día
+Crea  un  pequeño  archivo  JSON  de  tareas  pendientes  y  escribe  un  script  que  lo  cargue  y  lo  muestre
+ordenado.
+Resultado esperado al terminar el día
+Deberías poder usar JSON como mecanismo simple de persistencia.
+Resumen final del día
+Hoy aprendiste uno de los formatos más importantes del mundo real en desarrollo moderno.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+42
+
+===== PAGE 43 =====
+Día 18 — Manejo de errores con try, except, else y
+finally
+Objetivo del día
+Aprenderás a manejar errores sin que tu programa se rompa abruptamente.
+Explicación teórica completa
+Los errores o excepciones son situaciones anómalas que interrumpen la ejecución normal del programa.
+Bloques principales
+try: código que puede fallar
+except: qué hacer si falla
+else: qué hacer si no falla
+finally: qué hacer siempre
+Sintaxis y funcionamiento
+try:
+number= int(input("Enter a number: "))
+exceptValueError:
+print("Invalid number")
+else:
+print("You entered:", number)
+finally:
+print("End")
+Ejemplos prácticos
+División segura
+try:
+a = int(input("A: "))
+b = int(input("B: "))
+result= a / b
+exceptValueError:
+print("You must enter valid integers")
+exceptZeroDivisionError:
+print("You cannot divide by zero")
+• 
+• 
+• 
+• 
+43
+
+===== PAGE 44 =====
+else:
+print(result)
+Errores comunes del principiante
+Usar except: genérico para todo.
+Capturar errores y ocultar problemas reales.
+Pensar que manejar errores es opcional en programas reales.
+Buenas prácticas del día
+Captura excepciones específicas.
+No silencies errores importantes sin registrar contexto.
+Usa errores para validar entradas y operaciones externas.
+Ejercicios para practicar
+Maneja error al convertir texto a entero.
+Maneja división por cero.
+Maneja error al abrir un archivo inexistente.
+Usa else correctamente.
+Usa finally en un ejemplo simple.
+Mini reto del día
+Haz una mini calculadora robusta que no se rompa si el usuario mete datos inválidos.
+Resultado esperado al terminar el día
+Deberías escribir código más resistente frente a entradas incorrectas y fallos comunes.
+Resumen final del día
+Hoy tu código dio un salto de madurez. Un programa real debe saber fallar de forma controlada.
+Día 19 — Módulos, imports y organización en
+archivos
+Objetivo del día
+Aprenderás a dividir tu código en varios archivos y a importar funciones, variables y clases.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+44
+
+===== PAGE 45 =====
+Explicación teórica completa
+Cuando  un  programa  crece,  tener  todo  en  un  solo  archivo  se  vuelve  confuso.  Los  módulos  permiten
+separar responsabilidades.
+Un módulo es, en términos simples, un archivo .py.
+Import básico
+importmath
+print(math.sqrt(16))
+Import específico
+frommathimportsqrt
+print(sqrt(16))
+Import con alias
+importmathasm
+print(m.pi)
+Ejemplos prácticos
+Archivo utils.py
+defis_even(number):
+returnnumber% 2 ==0
+Archivo main.py
+fromutilsimportis_even
+print(is_even(10))
+Errores comunes del principiante
+Confundir archivo, módulo y paquete.
+Tener imports circulares.
+Ejecutar desde rutas equivocadas y romper imports relativos.
+• 
+• 
+• 
+45
+
+===== PAGE 46 =====
+Buenas prácticas del día
+Separa por responsabilidad, no por capricho.
+Usa nombres de módulo claros.
+Evita archivos gigantes.
+Ejercicios para practicar
+Crea un módulo con funciones matemáticas simples.
+Impórtalo desde otro archivo.
+Usa alias en un import.
+Importa solo una función.
+Separa un pequeño programa en dos módulos.
+Mini reto del día
+Divide una mini aplicación de consola en main.py, helpers.py y data.py.
+Resultado esperado al terminar el día
+Deberías poder organizar programas pequeños en varios archivos sin perder claridad.
+Resumen final del día
+Hoy empezaste a estructurar código como se hace en proyectos reales.
+Día 20 — Entornos virtuales, pip y
+requirements.txt
+Objetivo del día
+Aprenderás a aislar dependencias de proyectos y a instalar paquetes externos profesionalmente.
+Explicación teórica completa
+Qué es un entorno virtual
+Un entorno virtual es un espacio aislado donde un proyecto tiene sus propias dependencias de Python.
+Esto evita conflictos entre proyectos que necesitan versiones distintas de paquetes.
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+46
+
+===== PAGE 47 =====
+venv
+Es la herramienta estándar incluida en Python para crear entornos virtuales.
+pip
+Es el gestor de paquetes más usado en Python.
+requirements.txt
+Es un archivo de texto donde se listan dependencias necesarias para reproducir un entorno.
+Sintaxis y funcionamiento
+Crear entorno virtual
+python-mvenv.venv
+Activarlo
+En Windows: 
+.venv\Scripts\activate
+En macOS/Linux: 
+source.venv/bin/activate
+Instalar paquete
+pipinstallrequests
+Exportar dependencias
+pipfreeze> requirements.txt
+Ejemplos prácticos
+Crear un proyecto limpio.
+Instalar requests.
+• 
+• 
+47
+
+===== PAGE 48 =====
+Compartir requirements.txt.
+Errores comunes del principiante
+Instalar paquetes globalmente por accidente.
+No activar el entorno virtual.
+Creer que requirements.txt crea el entorno por sí solo.
+Buenas prácticas del día
+Usa un entorno virtual por proyecto.
+No mezcles dependencias globales y locales sin razón.
+Guarda dependencias del proyecto.
+Ejercicios para practicar
+Crea un entorno virtual.
+Actívalo.
+Instala un paquete.
+Genera requirements.txt.
+Elimina el entorno y recréalo a partir del archivo.
+Mini reto del día
+Configura un mini proyecto nuevo con entorno virtual y una dependencia externa instalada correctamente.
+Resultado esperado al terminar el día
+Deberías poder preparar un proyecto Python con dependencias aisladas.
+Resumen final del día
+Hoy aprendiste una base clave del trabajo profesional con Python: aislar y gestionar dependencias.
+Día 21 — Consumir APIs con requests
+Objetivo del día
+Aprenderás a hacer peticiones HTTP a APIs y a procesar respuestas JSON.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+48
+
+===== PAGE 49 =====
+Explicación teórica completa
+Una API permite que un programa se comunique con otro a través de una interfaz definida. Muchas APIs
+modernas usan HTTP y JSON.
+Qué es una petición HTTP
+Es una solicitud que tu programa envía a un servidor .
+requests
+Es una librería muy usada para hacer peticiones HTTP de forma sencilla.
+Sintaxis y funcionamiento
+importrequests
+response= requests.get("https://api.example.com/users")
+print(response.status_code)
+print(response.json())
+Ejemplos prácticos
+Consultar datos
+importrequests
+url= "https://jsonplaceholder.typicode.com/todos/1"
+response= requests.get(url, timeout=10)
+ifresponse.status_code==200:
+data= response.json()
+print(data)
+else:
+print("Request failed")
+Errores comunes del principiante
+No revisar el código de estado.
+Suponer que toda respuesta tiene JSON válido.
+No manejar timeouts o errores de red.
+• 
+• 
+• 
+49
+
+===== PAGE 50 =====
+Buenas prácticas del día
+Usa timeout.
+Verifica status_code.
+Trata la red como algo que puede fallar .
+Ejercicios para practicar
+Haz una petición GET a una API pública de prueba.
+Imprime el código de estado.
+Extrae dos campos del JSON.
+Maneja el caso de error .
+Guarda la respuesta JSON en un archivo.
+Mini reto del día
+Haz un script que consulte una API pública y muestre una lista resumida de resultados relevantes.
+Resultado esperado al terminar el día
+Deberías poder consumir APIs sencillas desde Python.
+Resumen final del día
+Hoy conectaste tu código con servicios externos, una habilidad muy útil para backend, automatización y
+scripting.
+Día 22 — Introducción a POO: clases, objetos, self y
+init
+Objetivo del día
+Aprenderás las bases de programación orientada a objetos en Python.
+Explicación teórica completa
+Una  clase  es  un  molde  para  crear  objetos.  Un  objeto  es  una  instancia  concreta  con  datos  y
+comportamientos.
+self
+Es la referencia al objeto actual dentro de sus métodos.
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+50
+
+===== PAGE 51 =====
+__init__
+Es el inicializador que se ejecuta al crear una instancia.
+Sintaxis y funcionamiento
+classUser:
+def__init__(self, name, age):
+self.name= name
+self.age= age
+user= User("Ana", 30)
+print(user.name)
+Ejemplos prácticos
+Clase Product
+classProduct:
+def__init__(self, name, price):
+self.name= name
+self.price= price
+defapply_discount(self, percentage):
+self.price= self.price* (1 - percentage)
+Errores comunes del principiante
+Olvidar self en métodos de instancia.
+Confundir clase con objeto.
+Crear clases para todo sin necesidad.
+Buenas prácticas del día
+Usa clases cuando tenga sentido modelar entidades con estado y comportamiento.
+Mantén la responsabilidad de la clase clara.
+Ejercicios para practicar
+Crea una clase Book.
+Crea una clase Car con método para mostrar datos.
+Instancia varios objetos.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+51
+
+===== PAGE 52 =====
+Modifica atributos.
+Agrega un método que calcule algo.
+Mini reto del día
+Modela una clase Task con título, estado y método para marcar como completada.
+Resultado esperado al terminar el día
+Deberías poder crear clases y objetos simples en Python.
+Resumen final del día
+Hoy entraste en una forma distinta de organizar código, muy común en proyectos medianos y grandes.
+Día 23 — Métodos, atributos, str y repr
+Objetivo del día
+Profundizarás en clases y aprenderás a representar objetos de forma útil.
+Explicación teórica completa
+Métodos
+Son funciones definidas dentro de una clase.
+Atributos
+Son datos asociados a la instancia.
+__str__
+Define una representación amigable para humanos.
+__repr__
+Define una representación más técnica y útil para depuración.
+4. 
+5. 
+52
+
+===== PAGE 53 =====
+Sintaxis y funcionamiento
+classUser:
+def__init__(self, name):
+self.name= name
+def__str__(self):
+returnf"User(name={self.name})"
+Ejemplos prácticos
+classTask:
+def__init__(self, title, done=False):
+self.title= title
+self.done= done
+defmark_done(self):
+self.done= True
+def__str__(self):
+status= "done"ifself.doneelse"pending"
+returnf"Task: {self.title} ({status})"
+Errores comunes del principiante
+No devolver string desde __str__.
+Poner demasiada lógica dentro de métodos de representación.
+Imprimir objetos sin representación clara y recibir algo poco útil.
+Buenas prácticas del día
+Implementa __str__ si la clase será mostrada al usuario.
+Usa __repr__ para debugging más técnico.
+Ejercicios para practicar
+Añade __str__ a una clase.
+Añade un método de actualización.
+Crea una clase con varios atributos.
+Imprime objetos antes y después de mejorar su representación.
+Escribe __repr__ simple para una clase.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+53
+
+===== PAGE 54 =====
+Mini reto del día
+Crea una clase Invoice que muestre una representación legible con su total.
+Resultado esperado al terminar el día
+Deberías escribir clases más útiles y legibles.
+Resumen final del día
+Hoy hiciste que tus objetos sean más expresivos y profesionales.
+Día 24 — Herencia y composición
+Objetivo del día
+Aprenderás dos formas importantes de reutilizar diseño: herencia y composición.
+Explicación teórica completa
+Herencia
+Permite crear una clase a partir de otra.
+Composición
+Consiste en construir una clase usando objetos de otras clases dentro.
+En Python, composición suele ser preferible cuando expresa mejor la relación real.
+Sintaxis y funcionamiento
+classAnimal:
+defspeak(self):
+print("Some sound")
+classDog(Animal):
+defspeak(self):
+print("Woof")
+54
+
+===== PAGE 55 =====
+Composición
+classEngine:
+defstart(self):
+print("Engine started")
+classCar:
+def__init__(self):
+self.engine= Engine()
+Ejemplos prácticos
+Usuario y perfil
+Composición sería más natural que herencia si un usuario “tiene un perfil”, no “es un perfil”.
+Errores comunes del principiante
+Usar herencia por moda.
+Modelar relaciones incorrectas.
+Crear jerarquías profundas y frágiles.
+Buenas prácticas del día
+Pregunta si la relación es “es un” o “tiene un”.
+Prefiere composición cuando da más flexibilidad.
+Ejercicios para practicar
+Crea una clase base y una derivada.
+Sobrescribe un método.
+Diseña un ejemplo de composición.
+Explica cuál de las dos usarías en un caso real.
+Refactoriza una idea de herencia a composición.
+Mini reto del día
+Modela un sistema simple de empleados y departamentos usando composición.
+Resultado esperado al terminar el día
+Deberías entender cómo estructurar relaciones entre clases de forma más consciente.
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+55
+
+===== PAGE 56 =====
+Resumen final del día
+Hoy diste un paso importante en diseño de software, no solo en sintaxis.
+Día 25 — Dataclass y type hints
+Objetivo del día
+Aprenderás a escribir clases más limpias con  dataclass y a usar anotaciones de tipos para mejorar
+claridad.
+Explicación teórica completa
+Type hints
+Permiten indicar qué tipo se espera en variables, parámetros y retornos.
+defadd(a: int, b: int) ->int:
+returna + b
+No obligan en tiempo de ejecución por sí solos, pero mejoran claridad, tooling y mantenimiento.
+dataclass
+Reduce código repetitivo en clases usadas principalmente para almacenar datos.
+Sintaxis y funcionamiento
+fromdataclassesimportdataclass
+@dataclass
+classUser:
+name: str
+age: int
+Esto genera automáticamente __init__, __repr__ y otras utilidades.
+56
+
+===== PAGE 57 =====
+Ejemplos prácticos
+fromdataclassesimportdataclass
+@dataclass
+classTask:
+title: str
+done: bool= False
+Errores comunes del principiante
+Creer que type hints reemplazan validación real.
+Usar dataclass para cualquier clase compleja con mucha lógica.
+Ignorar los tipos por completo en proyectos que ya crecieron.
+Buenas prácticas del día
+Usa type hints desde temprano.
+Usa dataclass para modelos de datos simples.
+Mantén consistencia en anotaciones.
+Ejercicios para practicar
+Añade type hints a funciones viejas.
+Convierte una clase simple a dataclass.
+Crea una lista tipada.
+Anota retorno de funciones.
+Crea un modelo Product con dataclass.
+Mini reto del día
+Modela una tarea con dataclass y funciones tipadas para gestionarla.
+Resultado esperado al terminar el día
+Deberías poder escribir código más claro y mantenible con anotaciones y clases de datos.
+Resumen final del día
+Hoy incorporaste dos herramientas muy valiosas del Python moderno.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+57
+
+===== PAGE 58 =====
+Día 26 — Testing con assert y pytest
+Objetivo del día
+Aprenderás a verificar automáticamente que tu código funciona como esperas.
+Explicación teórica completa
+Probar código no es desconfianza; es profesionalismo.
+assert
+Comprueba que una condición sea verdadera.
+assert2 + 2 ==4
+pytest
+Es una herramienta popular para testing en Python.
+Sintaxis y funcionamiento
+Archivo test_math_utils.py
+frommath_utilsimportadd
+deftest_add_two_numbers():
+assertadd(2, 3) ==5
+Ejecutar: 
+pytest
+58
+
+===== PAGE 59 =====
+Ejemplos prácticos
+Probar una función de descuento
+defcalculate_discount(price, percent):
+returnprice* percent
+Test: 
+fromdiscountsimportcalculate_discount
+deftest_calculate_discount():
+assertcalculate_discount(100, 0.1) ==10
+Errores comunes del principiante
+Probar muy poco o demasiado tarde.
+Mezclar lógica de aplicación con pruebas.
+Escribir tests que no cubren casos límite.
+Buenas prácticas del día
+Empieza probando funciones pequeñas.
+Usa nombres descriptivos en tests.
+Piensa en casos normales y extremos.
+Ejercicios para practicar
+Escribe un test para suma.
+Escribe un test para número par .
+Escribe un test para una función de formateo.
+Prueba un caso inválido si aplica.
+Ejecuta pytest y corrige fallos.
+Mini reto del día
+Escribe tres funciones y al menos un test para cada una.
+Resultado esperado al terminar el día
+Deberías entender cómo empezar a confiar más en tu código mediante pruebas.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+59
+
+===== PAGE 60 =====
+Resumen final del día
+Hoy entraste en una práctica fundamental del desarrollo profesional.
+Día 27 — Organización de código, estilo, black y
+ruff
+Objetivo del día
+Aprenderás hábitos de calidad de código: formato automático, linting y organización profesional básica.
+Explicación teórica completa
+Formateador
+Un formateador reescribe tu código con un estilo consistente. black es una opción muy popular .
+Linter
+Un linter detecta problemas de estilo, errores comunes o malas prácticas. ruff es muy rápido y potente.
+Sintaxis y funcionamiento
+Instalación: 
+pipinstallblackruff
+Uso: 
+black.
+ruffcheck.
+Ejemplos prácticos
+Corregir espacios y saltos de línea automáticamente.
+Detectar imports no usados.
+Detectar variables definidas pero no utilizadas.
+• 
+• 
+• 
+60
+
+===== PAGE 61 =====
+Errores comunes del principiante
+Creer que formato y calidad son lo mismo.
+Ignorar advertencias del linter sin entenderlas.
+Formatear manualmente de forma inconsistente.
+Buenas prácticas del día
+Automatiza formato.
+Corrige advertencias relevantes.
+Mantén estructura de carpetas simple y clara.
+Ejercicios para practicar
+Instala black y ruff.
+Formatea un archivo.
+Introduce un import no usado y detecta el problema.
+Corrige advertencias.
+Organiza una mini estructura de proyecto.
+Mini reto del día
+Toma un proyecto pequeño de días anteriores y déjalo más limpio con formato y linting.
+Resultado esperado al terminar el día
+Deberías valorar más la legibilidad, consistencia y mantenimiento.
+Resumen final del día
+Hoy aprendiste que escribir código profesional no es solo “que funcione”, sino que sea claro y mantenible.
+Día 28 — Proyecto final: diseño y estructura del
+gestor de tareas
+Objetivo del día
+Empezarás el proyecto final integrador: un gestor de tareas en consola con persistencia JSON.
+Explicación teórica completa
+Un proyecto real no se empieza escribiendo líneas al azar . Primero se diseña.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+61
+
+===== PAGE 62 =====
+Qué hará el proyecto
+agregar tareas,
+listar tareas,
+marcar tareas como completadas,
+eliminar tareas,
+guardar en JSON,
+cargar desde JSON,
+organizar código en varios módulos.
+Estructura sugerida
+project/
+  main.py
+  models.py
+  storage.py
+  services.py
+  tests/
+    test_services.py
+  tasks.json
+Diseño de modelo
+Usaremos dataclass para representar una tarea.
+Ejemplos prácticos
+models.py
+fromdataclassesimportdataclass
+@dataclass
+classTask:
+title: str
+done: bool= False
+Errores comunes del principiante
+Empezar sin pensar estructura.
+Mezclar interfaz, lógica y persistencia en un solo archivo.
+No definir claramente responsabilidades.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+62
+
+===== PAGE 63 =====
+Buenas prácticas del día
+Piensa primero el diseño.
+Separa datos, lógica y almacenamiento.
+Mantén el proyecto pequeño pero limpio.
+Ejercicios para practicar
+Crea estructura de carpetas.
+Crea Task como dataclass.
+Escribe un borrador de funciones necesarias.
+Diseña el menú principal.
+Define el formato JSON que usarás.
+Mini reto del día
+Deja creado el esqueleto del proyecto con archivos y funciones vacías bien nombradas.
+Resultado esperado al terminar el día
+Deberías tener el diseño claro y la estructura base del proyecto lista.
+Resumen final del día
+Hoy sembraste la base del proyecto final. Diseñar bien al inicio te ahorra mucho caos después.
+Día 29 — Proyecto final: implementación principal
+Objetivo del día
+Implementarás las funciones principales del gestor de tareas.
+Explicación teórica completa
+Hoy integrarás: - listas - diccionarios o dataclasses - funciones - archivos - JSON - condicionales - bucles
+Sintaxis y funcionamiento
+services.py
+frommodelsimportTask
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+63
+
+===== PAGE 64 =====
+defadd_task(tasks: list[Task],title: str) ->None:
+tasks.append(Task(title=title))
+deflist_tasks(tasks: list[Task])->None:
+forindex, taskinenumerate(tasks, start=1):
+status= "done"iftask.doneelse"pending"
+print(f"{index}. {task.title} - {status}")
+storage.py
+importjson
+frommodelsimportTask
+defsave_tasks(tasks: list[Task],filename: str) ->None:
+data= [{"title": task.title, "done": task.done} fortaskintasks]
+withopen(filename, "w", encoding="utf-8") asfile:
+json.dump(data, file, ensure_ascii=False, indent=2)
+Ejemplos prácticos
+main.py
+fromservicesimportadd_task, list_tasks
+fromstorageimportload_tasks, save_tasks
+defmain():
+tasks= load_tasks("tasks.json")
+whileTrue:
+print("\n1. Add task")
+print("2. List tasks")
+print("3. Save and exit")
+option= input("Choose an option: ").strip()
+ifoption=="1":
+title= input("Task title: ").strip()
+add_task(tasks, title)
+elifoption=="2":
+list_tasks(tasks)
+elifoption=="3":
+save_tasks(tasks, "tasks.json")
+64
+
+===== PAGE 65 =====
+break
+else:
+print("Invalid option")
+if__name__=="__main__":
+main()
+Errores comunes del principiante
+Mezclar lógica de archivo dentro del menú.
+No validar índices al marcar o eliminar tareas.
+Guardar datos con estructura inconsistente.
+Buenas prácticas del día
+Mantén funciones pequeñas.
+Usa nombres claros.
+Guarda y carga con formato consistente.
+Ejercicios para practicar
+Implementa agregar tareas.
+Implementa listar tareas.
+Implementa marcar completada.
+Implementa eliminar .
+Implementa guardado automático al salir .
+Mini reto del día
+Haz que el menú soporte al menos 5 opciones útiles y que persista correctamente en JSON.
+Resultado esperado al terminar el día
+Deberías tener el proyecto funcionando en su versión principal.
+Resumen final del día
+Hoy convertiste conceptos sueltos en una aplicación real.
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+65
+
+===== PAGE 66 =====
+Día 30 — Proyecto final: mejoras, pruebas y cierre
+profesional
+Objetivo del día
+Cerrarás el proyecto con mejoras, pruebas y limpieza final, y consolidarás todo lo aprendido.
+Explicación teórica completa
+Un proyecto no termina cuando “ya corre”. Debe quedar razonablemente limpio, usable y comprobado.
+Mejoras sugeridas
+validación de entradas,
+mensajes más claros,
+manejo de errores si el JSON no existe o está corrupto,
+tests para funciones de servicio,
+formato con black,
+revisión con ruff.
+Sintaxis y funcionamiento
+Test simple
+fromservicesimportadd_task
+deftest_add_task():
+tasks= []
+add_task(tasks, "Study Python")
+assertlen(tasks) ==1
+asserttasks[0].title=="Study Python"
+asserttasks[0].doneisFalse
+Ejemplos prácticos
+Manejar archivo inexistente
+importjson
+frompathlibimportPath
+frommodelsimportTask
+• 
+• 
+• 
+• 
+• 
+• 
+66
+
+===== PAGE 67 =====
+defload_tasks(filename: str) ->list[Task]:
+path= Path(filename)
+ifnotpath.exists():
+return[]
+withopen(path, "r", encoding="utf-8") asfile:
+data= json.load(file)
+return[Task(**item) foritemindata]
+Errores comunes del principiante
+Dar por terminado un proyecto sin probarlo.
+No revisar experiencia del usuario.
+Dejar código duplicado o mal organizado.
+Buenas prácticas del día
+Haz una pasada final de limpieza.
+Asegúrate de que el flujo principal sea cómodo de usar .
+Deja el proyecto listo para que otra persona lo entienda.
+Ejercicios para practicar
+Añade tests básicos.
+Formatea el proyecto.
+Revisa mensajes al usuario.
+Añade validación de índices.
+Documenta brevemente cómo ejecutar el proyecto.
+Mini reto del día
+Deja  el  gestor  de  tareas  en  una  versión  que  puedas  enseñar  con  orgullo  como  proyecto  base  de
+aprendizaje.
+Resultado esperado al terminar el día
+Deberías haber integrado una base sólida de Python en un proyecto funcional y organizado.
+Resumen final del día
+Hoy  cerraste  el  ciclo:  fundamentos,  estructuras,  funciones,  archivos,  JSON,  APIs,  POO,  testing  y
+organización.  Ya  tienes  una  base  real  para  avanzar  hacia  backend,  automatización,  scripting  o
+especialización posterior .
+• 
+• 
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+4. 
+5. 
+67
+
+===== PAGE 68 =====
+Cierre general del programa
+Si completaste este plan de verdad, escribiendo código, haciendo ejercicios y corrigiendo errores, ya no
+estás “empezando Python”: ya tienes una base sólida y profesional para seguir creciendo.
+Tus siguientes pasos recomendados, después de este plan, podrían ser:
+backend con Flask o FastAPI,
+automatización y scripting,
+testing más avanzado,
+bases de datos con SQLite y PostgreSQL,
+programación asíncrona,
+estructuras de proyecto más grandes,
+o un camino más orientado a data.
+Pero antes de correr al siguiente nivel, asegúrate de que este material realmente quedó dominado. La
+velocidad correcta no es la de avanzar más temas por día, sino la de construir una base que no se rompa.
+Python recompensa mucho a quien entiende bien lo básico.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+68

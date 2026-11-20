@@ -1,0 +1,1 @@
+Hoy vas a entender qué es Python, cómo se ejecuta un programa Python, qué son los archivos.py, cómo mostrar información en pantalla con print(), cómo declarar variables y cuáles son los tipos básicos más importantes. En la práctica, esto te servirá para empezar a escribir tus primeros programas funcionales y comprender la base sobre la que se apoya todo lo demás.

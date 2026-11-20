@@ -1,0 +1,3 @@
+- Mantén funciones pequeñas.
+- Usa nombres claros.
+- Guarda y carga con formato consistente.

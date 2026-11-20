@@ -1,0 +1,92 @@
+{
+  "day": 14,
+  "slug": "dia_14",
+  "title": "sorted, any, all y lambda",
+  "summary": "Hoy incorporaste herramientas muy comunes en código profesional de Python.",
+  "sections": [
+    {
+      "id": "objective",
+      "title": "Objetivo del día",
+      "file": "sections/objective.md"
+    },
+    {
+      "id": "theory",
+      "title": "Explicación teórica",
+      "file": "sections/theory.md"
+    },
+    {
+      "id": "syntax",
+      "title": "Sintaxis y funcionamiento",
+      "file": "sections/syntax.md"
+    },
+    {
+      "id": "simple_examples",
+      "title": "Ejemplos simples",
+      "file": "sections/simple_examples.md"
+    },
+    {
+      "id": "practical_examples",
+      "title": "Ejemplos prácticos",
+      "file": "sections/practical_examples.md"
+    },
+    {
+      "id": "common_errors",
+      "title": "Errores comunes",
+      "file": "sections/common_errors.md"
+    },
+    {
+      "id": "best_practices",
+      "title": "Buenas prácticas",
+      "file": "sections/best_practices.md"
+    },
+    {
+      "id": "exercises",
+      "title": "Ejercicios para practicar",
+      "file": "sections/exercises.md"
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "file": "sections/challenge.md"
+    },
+    {
+      "id": "expected_result",
+      "title": "Resultado esperado",
+      "file": "sections/expected_result.md"
+    },
+    {
+      "id": "summary",
+      "title": "Resumen final",
+      "file": "sections/summary.md"
+    }
+  ],
+  "code_blocks": [
+    {
+      "id": "example",
+      "title": "sorted, any, all",
+      "category": "example",
+      "file": "examples/example.py",
+      "description": "Usa utilidades integradas.",
+      "expected_output": "[5, 7, 8, 9]",
+      "default_input": ""
+    },
+    {
+      "id": "exercise",
+      "title": "lambda en sorted",
+      "category": "exercise",
+      "file": "exercises/exercise.py",
+      "description": "Ordena productos por precio.",
+      "expected_output": "False",
+      "default_input": ""
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "category": "challenge",
+      "file": "challenge/challenge.py",
+      "description": "Ordena tareas por prioridad.",
+      "expected_output": "Practice 1",
+      "default_input": ""
+    }
+  ]
+}

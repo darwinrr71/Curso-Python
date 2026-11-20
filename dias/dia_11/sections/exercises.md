@@ -1,0 +1,1 @@
+Crea una función que sume dos números. Crea una función que reciba un nombre y devuelva un saludo. Crea una función que determine si un número es par. Crea una función que calcule el área de un triángulo. Crea una función que reciba un precio y un descuento y devuelva el precio final.

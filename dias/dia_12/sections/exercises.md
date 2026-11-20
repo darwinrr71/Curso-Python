@@ -1,0 +1,1 @@
+Crea una función con variables locales y comprueba su alcance. Define una constante global y úsala en una función. Reescribe una función para que reciba parámetros en vez de usar globales. Experimenta con un nombre local igual a uno global. Explica con tus palabras qué es scope.

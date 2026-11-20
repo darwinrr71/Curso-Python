@@ -1,0 +1,1 @@
+Calcula el área de un rectángulo. Calcula el promedio de tres notas. Verifica si un número es par usando %. Convierte una edad en texto a entero y súmale 10. Escribe expresiones con and, or y not y predice el resultado antes de ejecutarlas.

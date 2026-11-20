@@ -1,0 +1,3 @@
+- Automatiza formato.
+- Corrige advertencias relevantes.
+- Mantén estructura de carpetas simple y clara.

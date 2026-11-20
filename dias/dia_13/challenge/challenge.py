@@ -1,0 +1,1 @@
+tasks = ["study", "code", "rest"]

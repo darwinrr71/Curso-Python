@@ -1,0 +1,3 @@
+- Corregir espacios y saltos de línea automáticamente.
+- Detectar imports no usados.
+- Detectar variables definidas pero no utilizadas.

@@ -1,0 +1,92 @@
+{
+  "day": 1,
+  "slug": "dia_01",
+  "title": "Qué es Python, cómo se ejecuta, print, variables y tipos básicos",
+  "summary": "Hoy construiste la base inicial del lenguaje: qué es Python, cómo se ejecuta y cómo guardar y mostrar información. Esto parece simple, pero es el punto de partida de todo lo que vendrá después.",
+  "sections": [
+    {
+      "id": "objective",
+      "title": "Objetivo del día",
+      "file": "sections/objective.md"
+    },
+    {
+      "id": "theory",
+      "title": "Explicación teórica",
+      "file": "sections/theory.md"
+    },
+    {
+      "id": "syntax",
+      "title": "Sintaxis y funcionamiento",
+      "file": "sections/syntax.md"
+    },
+    {
+      "id": "simple_examples",
+      "title": "Ejemplos simples",
+      "file": "sections/simple_examples.md"
+    },
+    {
+      "id": "practical_examples",
+      "title": "Ejemplos prácticos",
+      "file": "sections/practical_examples.md"
+    },
+    {
+      "id": "common_errors",
+      "title": "Errores comunes",
+      "file": "sections/common_errors.md"
+    },
+    {
+      "id": "best_practices",
+      "title": "Buenas prácticas",
+      "file": "sections/best_practices.md"
+    },
+    {
+      "id": "exercises",
+      "title": "Ejercicios para practicar",
+      "file": "sections/exercises.md"
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "file": "sections/challenge.md"
+    },
+    {
+      "id": "expected_result",
+      "title": "Resultado esperado",
+      "file": "sections/expected_result.md"
+    },
+    {
+      "id": "summary",
+      "title": "Resumen final",
+      "file": "sections/summary.md"
+    }
+  ],
+  "code_blocks": [
+    {
+      "id": "example",
+      "title": "Variables básicas",
+      "category": "example",
+      "file": "examples/example.py",
+      "description": "Presenta texto, enteros y booleanos.",
+      "expected_output": "Ana 30 False",
+      "default_input": ""
+    },
+    {
+      "id": "exercise",
+      "title": "Ficha personal",
+      "category": "exercise",
+      "file": "exercises/exercise.py",
+      "description": "Construye una ficha simple.",
+      "expected_output": "Sweden",
+      "default_input": ""
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "category": "challenge",
+      "file": "challenge/challenge.py",
+      "description": "Representa un producto.",
+      "expected_output": "Student: False",
+      "default_input": ""
+    }
+  ]
+}

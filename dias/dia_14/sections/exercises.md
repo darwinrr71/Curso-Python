@@ -1,0 +1,1 @@
+Ordena una lista de números. Ordena una lista de palabras por longitud. Comprueba si alguna nota aprueba. Comprueba si todos los usuarios están activos. Ordena una lista de diccionarios por una clave.

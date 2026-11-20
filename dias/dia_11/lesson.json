@@ -1,0 +1,92 @@
+{
+  "day": 11,
+  "slug": "dia_11",
+  "title": "Funciones: definición, parámetros y retorno",
+  "summary": "Hoy diste un salto importante: dejaste de escribir solo scripts lineales y empezaste a construir piezas reutilizables.",
+  "sections": [
+    {
+      "id": "objective",
+      "title": "Objetivo del día",
+      "file": "sections/objective.md"
+    },
+    {
+      "id": "theory",
+      "title": "Explicación teórica",
+      "file": "sections/theory.md"
+    },
+    {
+      "id": "syntax",
+      "title": "Sintaxis y funcionamiento",
+      "file": "sections/syntax.md"
+    },
+    {
+      "id": "simple_examples",
+      "title": "Ejemplos simples",
+      "file": "sections/simple_examples.md"
+    },
+    {
+      "id": "practical_examples",
+      "title": "Ejemplos prácticos",
+      "file": "sections/practical_examples.md"
+    },
+    {
+      "id": "common_errors",
+      "title": "Errores comunes",
+      "file": "sections/common_errors.md"
+    },
+    {
+      "id": "best_practices",
+      "title": "Buenas prácticas",
+      "file": "sections/best_practices.md"
+    },
+    {
+      "id": "exercises",
+      "title": "Ejercicios para practicar",
+      "file": "sections/exercises.md"
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "file": "sections/challenge.md"
+    },
+    {
+      "id": "expected_result",
+      "title": "Resultado esperado",
+      "file": "sections/expected_result.md"
+    },
+    {
+      "id": "summary",
+      "title": "Resumen final",
+      "file": "sections/summary.md"
+    }
+  ],
+  "code_blocks": [
+    {
+      "id": "example",
+      "title": "Función con retorno",
+      "category": "example",
+      "file": "examples/example.py",
+      "description": "Define una función simple.",
+      "expected_output": "Hola, Ada",
+      "default_input": ""
+    },
+    {
+      "id": "exercise",
+      "title": "Área de rectángulo",
+      "category": "exercise",
+      "file": "exercises/exercise.py",
+      "description": "Usa parámetros y retorno.",
+      "expected_output": "10.0",
+      "default_input": ""
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "category": "challenge",
+      "file": "challenge/challenge.py",
+      "description": "Describe un producto con una función.",
+      "expected_output": "Notebook cuesta 4.5 y quedan 8 unidades.",
+      "default_input": ""
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "day": 12,
+  "slug": "dia_12",
+  "title": "Scope, variables locales y globales",
+  "summary": "Hoy empezaste a escribir código más controlado y menos dependiente del contexto externo.",
+  "sections": [
+    {
+      "id": "objective",
+      "title": "Objetivo del día",
+      "file": "sections/objective.md"
+    },
+    {
+      "id": "theory",
+      "title": "Explicación teórica",
+      "file": "sections/theory.md"
+    },
+    {
+      "id": "syntax",
+      "title": "Sintaxis y funcionamiento",
+      "file": "sections/syntax.md"
+    },
+    {
+      "id": "simple_examples",
+      "title": "Ejemplos simples",
+      "file": "sections/simple_examples.md"
+    },
+    {
+      "id": "practical_examples",
+      "title": "Ejemplos prácticos",
+      "file": "sections/practical_examples.md"
+    },
+    {
+      "id": "common_errors",
+      "title": "Errores comunes",
+      "file": "sections/common_errors.md"
+    },
+    {
+      "id": "best_practices",
+      "title": "Buenas prácticas",
+      "file": "sections/best_practices.md"
+    },
+    {
+      "id": "exercises",
+      "title": "Ejercicios para practicar",
+      "file": "sections/exercises.md"
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "file": "sections/challenge.md"
+    },
+    {
+      "id": "expected_result",
+      "title": "Resultado esperado",
+      "file": "sections/expected_result.md"
+    },
+    {
+      "id": "summary",
+      "title": "Resumen final",
+      "file": "sections/summary.md"
+    }
+  ],
+  "code_blocks": [
+    {
+      "id": "example",
+      "title": "Scope local",
+      "category": "example",
+      "file": "examples/example.py",
+      "description": "Muestra variable local y global.",
+      "expected_output": "local",
+      "default_input": ""
+    },
+    {
+      "id": "exercise",
+      "title": "Sin global innecesario",
+      "category": "exercise",
+      "file": "exercises/exercise.py",
+      "description": "Devuelve un valor actualizado.",
+      "expected_output": "1",
+      "default_input": ""
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "category": "challenge",
+      "file": "challenge/challenge.py",
+      "description": "Ejemplo controlado con global.",
+      "expected_output": "2",
+      "default_input": ""
+    }
+  ]
+}

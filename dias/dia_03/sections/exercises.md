@@ -1,0 +1,1 @@
+Pide nombre y edad e imprime un mensaje personalizado. Pide dos números y muestra suma, resta, multiplicación y división. Pide ancho y alto y calcula el área. Pide precio y descuento y calcula el precio final. Pide un número y muestra si es par o impar.

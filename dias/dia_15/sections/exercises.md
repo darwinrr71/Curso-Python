@@ -1,0 +1,5 @@
+- Crea una función que sume todos los argumentos recibidos.
+- Crea una función que imprima pares clave-valor con `**kwargs`.
+- Desempaqueta una tupla en tres variables.
+- Combina dos diccionarios usando unpacking.
+- Llama una función pasando una lista desempaquetada.

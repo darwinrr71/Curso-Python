@@ -1,0 +1,92 @@
+{
+  "day": 24,
+  "slug": "dia_24",
+  "title": "Herencia y composición",
+  "summary": "Hoy diste un paso importante en diseño de software, no solo en sintaxis.",
+  "sections": [
+    {
+      "id": "objective",
+      "title": "Objetivo del día",
+      "file": "sections/objective.md"
+    },
+    {
+      "id": "theory",
+      "title": "Explicación teórica",
+      "file": "sections/theory.md"
+    },
+    {
+      "id": "syntax",
+      "title": "Sintaxis y funcionamiento",
+      "file": "sections/syntax.md"
+    },
+    {
+      "id": "simple_examples",
+      "title": "Ejemplos simples",
+      "file": "sections/simple_examples.md"
+    },
+    {
+      "id": "practical_examples",
+      "title": "Ejemplos prácticos",
+      "file": "sections/practical_examples.md"
+    },
+    {
+      "id": "common_errors",
+      "title": "Errores comunes",
+      "file": "sections/common_errors.md"
+    },
+    {
+      "id": "best_practices",
+      "title": "Buenas prácticas",
+      "file": "sections/best_practices.md"
+    },
+    {
+      "id": "exercises",
+      "title": "Ejercicios para practicar",
+      "file": "sections/exercises.md"
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "file": "sections/challenge.md"
+    },
+    {
+      "id": "expected_result",
+      "title": "Resultado esperado",
+      "file": "sections/expected_result.md"
+    },
+    {
+      "id": "summary",
+      "title": "Resumen final",
+      "file": "sections/summary.md"
+    }
+  ],
+  "code_blocks": [
+    {
+      "id": "example",
+      "title": "Herencia",
+      "category": "example",
+      "file": "examples/example.py",
+      "description": "Especializa una clase base.",
+      "expected_output": "Ana Python",
+      "default_input": ""
+    },
+    {
+      "id": "exercise",
+      "title": "Composición",
+      "category": "exercise",
+      "file": "exercises/exercise.py",
+      "description": "Compón una clase con otra.",
+      "expected_output": "Bogotá",
+      "default_input": ""
+    },
+    {
+      "id": "challenge",
+      "title": "Mini reto",
+      "category": "challenge",
+      "file": "challenge/challenge.py",
+      "description": "Combina curso y progreso.",
+      "expected_output": "Python 24",
+      "default_input": ""
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+- Olvidar que `input()` devuelve `str`.
+- Convertir directamente con `int()` sin validar y romper el programa si el usuario escribe texto no numérico.
+- Escribir mensajes de entrada poco claros.

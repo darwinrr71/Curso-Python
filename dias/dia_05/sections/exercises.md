@@ -1,0 +1,1 @@
+Toma un nombre y muéstralo en mayúsculas y minúsculas. Extrae el dominio de un email con slicing o split. Cuenta cuántos caracteres tiene una frase. Reemplaza una palabra por otra en una oración. Pide un texto y muestra su primer y último carácter.

@@ -1,0 +1,1 @@
+Pide una edad y muestra si es menor o mayor de edad. Pide un número y muestra si es positivo, negativo o cero. Pide una nota y clasifícala. Pide usuario y contraseña simples y valida ambos. Pide hora y muestra “morning”, “afternoon” o “night”.

@@ -1,0 +1,3 @@
+- Confundir archivo, módulo y paquete.
+- Tener imports circulares.
+- Ejecutar desde rutas equivocadas y romper imports relativos.
